@@ -18,14 +18,13 @@ extension PhotoScrap {
     
     init?(cloudKitRecord: CKRecord) {
         guard let title = cloudKitRecord[PhotoScrap.titleKey] as? String,
-            let image = cloudKitRecord[PhotoScrap.imageKey] as? CKAsset
+            let image = cloudKitRecord[PhotoScrap.imageKey] as? NSData
             where cloudKitRecord.recordType == PhotoScrap.recordType else {
+                print("Failable init failed")
                 return nil
         }
         
-        let photoData = NSData(contentsOfURL: image.fileURL)
-        
-        self.init(title: title, photoData: photoData)
+        self.init(title: title, photoData: image)
     }
     
     var cloudKitRecord: CKRecord {
