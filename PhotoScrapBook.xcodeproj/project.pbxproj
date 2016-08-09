@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC5954CD1D59819000889625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954CC1D59819000889625 /* AppDelegate.swift */; };
+		BC5954D21D59819000889625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5954D01D59819000889625 /* Main.storyboard */; };
+		BC5954D41D59819000889625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5954D31D59819000889625 /* Assets.xcassets */; };
+		BC5954D71D59819000889625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5954D51D59819000889625 /* LaunchScreen.storyboard */; };
+		BC5954E01D5981ED00889625 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC5954DF1D5981ED00889625 /* CloudKit.framework */; };
+		BC5954E61D59889E00889625 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954E51D59889E00889625 /* ImageTableViewController.swift */; };
+		BC5954E81D59892900889625 /* WebImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954E71D59892900889625 /* WebImageSearchViewController.swift */; };
+		BC5954EA1D598A6F00889625 /* PhotoScrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954E91D598A6F00889625 /* PhotoScrap.swift */; };
+		BC5954EC1D598B1900889625 /* PhotoScrap+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954EB1D598B1900889625 /* PhotoScrap+CoreData.swift */; };
+		BC5954EE1D598E9100889625 /* PhotoScrapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954ED1D598E9000889625 /* PhotoScrapController.swift */; };
+		BC5954F01D598F7400889625 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5954EF1D598F7400889625 /* CloudKitManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC5954C91D59818F00889625 /* PhotoScrapBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoScrapBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC5954CC1D59819000889625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC5954D11D59819000889625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC5954D31D59819000889625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC5954D61D59819000889625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC5954D81D59819000889625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5954DE1D5981E600889625 /* PhotoScrapBook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PhotoScrapBook.entitlements; sourceTree = "<group>"; };
+		BC5954DF1D5981ED00889625 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		BC5954E51D59889E00889625 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		BC5954E71D59892900889625 /* WebImageSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebImageSearchViewController.swift; sourceTree = "<group>"; };
+		BC5954E91D598A6F00889625 /* PhotoScrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScrap.swift; sourceTree = "<group>"; };
+		BC5954EB1D598B1900889625 /* PhotoScrap+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoScrap+CoreData.swift"; sourceTree = "<group>"; };
+		BC5954ED1D598E9000889625 /* PhotoScrapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScrapController.swift; sourceTree = "<group>"; };
+		BC5954EF1D598F7400889625 /* CloudKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC5954C61D59818F00889625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5954E01D5981ED00889625 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC5954C01D59818E00889625 = {
+			isa = PBXGroup;
+			children = (
+				BC5954CB1D59818F00889625 /* PhotoScrapBook */,
+				BC5954CA1D59818F00889625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC5954CA1D59818F00889625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954C91D59818F00889625 /* PhotoScrapBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC5954CB1D59818F00889625 /* PhotoScrapBook */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954E41D5982DD00889625 /* Utilties */,
+				BC5954E31D5982D100889625 /* Model */,
+				BC5954E21D5982C800889625 /* View */,
+				BC5954E11D59821100889625 /* Controller */,
+				BC5954D31D59819000889625 /* Assets.xcassets */,
+				BC5954D01D59819000889625 /* Main.storyboard */,
+				BC5954D51D59819000889625 /* LaunchScreen.storyboard */,
+				BC5954D81D59819000889625 /* Info.plist */,
+			);
+			path = PhotoScrapBook;
+			sourceTree = "<group>";
+		};
+		BC5954E11D59821100889625 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954ED1D598E9000889625 /* PhotoScrapController.swift */,
+				BC5954EF1D598F7400889625 /* CloudKitManager.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BC5954E21D5982C800889625 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954E51D59889E00889625 /* ImageTableViewController.swift */,
+				BC5954E71D59892900889625 /* WebImageSearchViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BC5954E31D5982D100889625 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954E91D598A6F00889625 /* PhotoScrap.swift */,
+				BC5954EB1D598B1900889625 /* PhotoScrap+CoreData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BC5954E41D5982DD00889625 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				BC5954DE1D5981E600889625 /* PhotoScrapBook.entitlements */,
+				BC5954DF1D5981ED00889625 /* CloudKit.framework */,
+				BC5954CC1D59819000889625 /* AppDelegate.swift */,
+			);
+			name = Utilties;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC5954C81D59818F00889625 /* PhotoScrapBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC5954DB1D59819000889625 /* Build configuration list for PBXNativeTarget "PhotoScrapBook" */;
+			buildPhases = (
+				BC5954C51D59818F00889625 /* Sources */,
+				BC5954C61D59818F00889625 /* Frameworks */,
+				BC5954C71D59818F00889625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoScrapBook;
+			productName = PhotoScrapBook;
+			productReference = BC5954C91D59818F00889625 /* PhotoScrapBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC5954C11D59818E00889625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = home;
+				TargetAttributes = {
+					BC5954C81D59818F00889625 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HQN23BS377;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BC5954C41D59818E00889625 /* Build configuration list for PBXProject "PhotoScrapBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC5954C01D59818E00889625;
+			productRefGroup = BC5954CA1D59818F00889625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC5954C81D59818F00889625 /* PhotoScrapBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC5954C71D59818F00889625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5954D71D59819000889625 /* LaunchScreen.storyboard in Resources */,
+				BC5954D41D59819000889625 /* Assets.xcassets in Resources */,
+				BC5954D21D59819000889625 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC5954C51D59818F00889625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC5954EC1D598B1900889625 /* PhotoScrap+CoreData.swift in Sources */,
+				BC5954CD1D59819000889625 /* AppDelegate.swift in Sources */,
+				BC5954EE1D598E9100889625 /* PhotoScrapController.swift in Sources */,
+				BC5954E81D59892900889625 /* WebImageSearchViewController.swift in Sources */,
+				BC5954F01D598F7400889625 /* CloudKitManager.swift in Sources */,
+				BC5954EA1D598A6F00889625 /* PhotoScrap.swift in Sources */,
+				BC5954E61D59889E00889625 /* ImageTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC5954D01D59819000889625 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC5954D11D59819000889625 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC5954D51D59819000889625 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC5954D61D59819000889625 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC5954D91D59819000889625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC5954DA1D59819000889625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC5954DC1D59819000889625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoScrapBook/PhotoScrapBook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PhotoScrapBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegoa3d.PhotoScrapBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC5954DD1D59819000889625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PhotoScrapBook/PhotoScrapBook.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PhotoScrapBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diegoa3d.PhotoScrapBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC5954C41D59818E00889625 /* Build configuration list for PBXProject "PhotoScrapBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5954D91D59819000889625 /* Debug */,
+				BC5954DA1D59819000889625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC5954DB1D59819000889625 /* Build configuration list for PBXNativeTarget "PhotoScrapBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC5954DC1D59819000889625 /* Debug */,
+				BC5954DD1D59819000889625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC5954C11D59818E00889625 /* Project object */;
+}
