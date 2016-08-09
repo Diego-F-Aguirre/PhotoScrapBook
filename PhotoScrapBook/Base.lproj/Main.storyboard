@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="a6p-Fy-RaP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scrapCell" rowHeight="188" id="a6p-Fy-RaP" customClass="PhotoScrapTableViewCell" customModule="PhotoScrapBook" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a6p-Fy-RaP" id="Dl4-3Q-bkd">
@@ -44,6 +44,10 @@
                                         <constraint firstItem="YZZ-Eq-zSZ" firstAttribute="leading" secondItem="Dl4-3Q-bkd" secondAttribute="leadingMargin" id="a6R-qx-J6r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoImageView" destination="yg9-B1-kds" id="D6K-0s-t1S"/>
+                                    <outlet property="titleLabel" destination="YZZ-Eq-zSZ" id="Y43-xI-zvP"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -78,12 +82,34 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YB4-oV-xAz">
                                 <rect key="frame" x="20" y="20" width="560" height="560"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-Oi-Quo">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="530"/>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Weg-Oi-Quo">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="470"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="OdP-yK-CyN" appends="YES" id="xBJ-5J-x5O"/>
+                                        </connections>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEL-bU-SaW">
-                                        <rect key="frame" x="0.0" y="530" width="560" height="30"/>
+                                        <rect key="frame" x="0.0" y="470" width="560" height="30"/>
                                         <state key="normal" title="Get image from web"/>
+                                        <connections>
+                                            <action selector="getImageFromWeb:" destination="SvS-OJ-roe" eventType="touchUpInside" id="hj1-Ly-OTc"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5fL-qy-ADI">
+                                        <rect key="frame" x="0.0" y="500" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="SvS-OJ-roe" id="lva-bx-rtq"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76X-ni-bsd">
+                                        <rect key="frame" x="0.0" y="530" width="560" height="30"/>
+                                        <state key="normal" title="Save Photo Scrap"/>
+                                        <connections>
+                                            <action selector="savePhotoScrapButtonPressed:" destination="SvS-OJ-roe" eventType="touchUpInside" id="oJs-P1-Wrd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -96,8 +122,17 @@
                             <constraint firstItem="YB4-oV-xAz" firstAttribute="top" secondItem="ALe-yL-jRB" secondAttribute="bottom" id="Xqx-p9-hS3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleTextField" destination="5fL-qy-ADI" id="Gfd-u6-sNr"/>
+                        <outlet property="webImageView" destination="Weg-Oi-Quo" id="LWz-EV-RJn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LAP-5p-8mY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OdP-yK-CyN">
+                    <connections>
+                        <action selector="imageTapped:" destination="SvS-OJ-roe" id="qQE-dv-sCt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1630" y="399"/>
         </scene>

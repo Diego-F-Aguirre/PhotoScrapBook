@@ -19,7 +19,9 @@ extension PhotoScrap {
     init?(cloudKitRecord: CKRecord) {
         guard let title = cloudKitRecord[PhotoScrap.titleKey] as? String,
             let image = cloudKitRecord[PhotoScrap.imageKey] as? CKAsset
-            where cloudKitRecord.recordType == PhotoScrap.recordType else { return nil }
+            where cloudKitRecord.recordType == PhotoScrap.recordType else {
+                return nil
+        }
         
         let photoData = NSData(contentsOfURL: image.fileURL)
         

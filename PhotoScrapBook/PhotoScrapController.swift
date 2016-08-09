@@ -30,6 +30,21 @@ class PhotoScrapController {
         }
     }
     
+    func postNewScrap(photoScrap: PhotoScrap, completion: (NSError?) -> Void) {
+        let record = photoScrap.cloudKitRecord
+        
+        cloudKitManager.saveRecord(record) { (error) in
+            defer { completion(error) }
+            
+            if let error = error {
+                print("Error saving \(photoScrap) to CloudKit \(error.localizedDescription)")
+                return
+            }
+            self.photoScraps.insert(photoScrap, atIndex: 0)
+            print("Scrap Successfully Saved!")
+        }
+    }
+    
     func refresh(completion: ((NSError?) -> Void)? = nil) {
         
         let sortDescriptors = [NSSortDescriptor(key: PhotoScrap.titleKey, ascending: false)]

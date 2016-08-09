@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PhotoScrapBook/PhotoScrap+CoreData.swift"
+            timestampString = "492414890.144129"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init(cloudKitRecord:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoScrapBook.PhotoScrap.init (cloudKitRecord : __ObjC.CKRecord) -&gt; Swift.Optional&lt;PhotoScrapBook.PhotoScrap&gt;"
+                  moduleName = "PhotoScrapBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoaguirre/Desktop/Development/DevMountain_iOS7/Unit4/Module2/PhotoScrapBook/PhotoScrapBook/PhotoScrap+CoreData.swift"
+                  timestampString = "492415744.556155"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PhotoScrapBook.PhotoScrap.init (cloudKitRecord : __ObjC.CKRecord) -&gt; Swift.Optional&lt;PhotoScrapBook.PhotoScrap&gt;"
+                  moduleName = "PhotoScrapBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoaguirre/Desktop/Development/DevMountain_iOS7/Unit4/Module2/PhotoScrapBook/PhotoScrapBook/PhotoScrap+CoreData.swift"
+                  timestampString = "492415744.567957"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "408">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
